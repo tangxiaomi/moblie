@@ -1,0 +1,40 @@
+/*头部开始 */
+.cg_header{
+    height: 45px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    left: 50%;
+    top: 0;/*为了让他可以再最上边显示 */
+    transform: translateX(-50%);
+    min-width: 320px;
+    max-width: 640px;
+    background:-webkit-linear-gradient(top,#fff,#ccc);
+    border-bottom: 1px solid #666;
+}
+.cg_header .left{
+    height:45px;
+    width:40px;
+    position: relative;
+}
+.cg_header .right{
+    height:45px;
+    width:42px;
+    position: relative;
+}
+.cg_header .center{
+    margin: 7px 42px 0px 40px;
+    height: 35px;
+
+}
+.cg_header .center input{
+    height: 32px;
+    border-radius: 10px;
+    width: 100%;
+    outline: none;
+    line-height: 32px;
+    text-indent: 10px;
+}
+
+

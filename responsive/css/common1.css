@@ -1,0 +1,104 @@
+/*
+* @Author: Administrator
+* @Date:   2016-11-20 15:45:56
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-11-20 15:58:43
+*/
+
+/* 声明iconfont字体 */
+@font-face {
+    font-family: 'itcast';
+    src:
+    url(../font/MiFie-Web-Font.eot) format('embedded-opentype'),
+    url(../font/MiFie-Web-Font.svg) format('svg'),
+    url(../font/MiFie-Web-Font.ttf) format('truetype'),
+    url(../font/MiFie-Web-Font.woff) format('woff')
+}
+.wjs_icons{
+    font-family: 'itcast';
+    font-size: 16px;
+}
+.phone_icons::before{
+    content: "\e908";  /*字体不用转换定位*/
+}
+.tel_icons::before{
+    content: "\e909";
+}
+.my_logo1::before{
+     content: "\e920";
+    font-size: 48px;
+    color: red;
+    vertical-align: middle; /*中线对齐*/
+ }
+.my_logo2::before{
+    content:  "\e93e";
+    font-size: 32px;
+    vertical-align: middle;
+}
+.money_icon::before{
+    content: '\e907';
+    font-size: 40px;
+}
+.my_time::before{
+    content: '\e906';
+}
+.my_camera::before{
+    content: '\e905';
+}
+.tiyan_icon::before{
+    position: absolute;
+    content: '\e915';
+    font-size: 50px;
+    left: 0px;
+    top: -12px;
+}
+.my_qiu::before{
+    content: "\e90e";
+    font-size: 30px;
+
+}
+.my_news::before{
+    content: "\e90f";
+    font-size: 30px;
+
+}
+.my_talk::before{
+    content: "\e910";
+    font-size: 30px;
+
+}
+.my_pc::before{
+    content: "\e911";
+    font-size: 30px;
+
+}
+
+body{
+    font: 12px/1.5 '微软雅黑';
+}
+a{
+    font-size: 12px;
+    color: #333;
+    font-family: '微软雅黑';
+}
+a:hover{
+    color: #333;
+}
+.mt_10{
+    margin-top: 10px;
+}
+.ml_10{
+    margin-left: 10px;
+}
+.mr_10{
+    margin-right: 10px;
+}
+.mb_10{
+    margin-bottom: 10px;
+}
+.mt_20{
+    margin-top: 20px !important;
+}
+.color{
+    color: red;
+}

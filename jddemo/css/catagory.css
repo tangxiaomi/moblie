@@ -1,0 +1,112 @@
+.my_arrow::before{
+    width: 13px;
+    height: 20px;
+    background-position: -24px 0;
+}
+.my_menue::before{
+    width: 18px;
+    height: 19px;
+    background-position: -61px 0;
+}
+/*/!*头部开始 *!/
+.cg_header{
+    height: 45px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 320px;
+    max-width: 640px;
+    background:-webkit-linear-gradient(top,#fff,#ccc);
+    border-bottom: 1px solid #666;
+}
+.cg_header .left{
+    height:45px;
+    width:40px;
+    position: relative;
+}
+.cg_header .right{
+    height:45px;
+    width:42px;
+    position: relative;
+}
+.cg_header .center{
+   margin: 7px 42px 0px 40px;
+    height: 35px;
+
+}
+.cg_header .center input{
+    height: 32px;
+    border-radius: 10px;
+    width: 100%;
+    outline: none;
+    line-height: 32px;
+    text-indent: 10px;
+}*/
+/*侧边栏开始*/
+html,body{
+    height:100%;
+}
+.cg_clum{
+    padding-top: 46px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.cg_clum .content{
+    height: 100%;
+    /*overflow: hidden; /!*高度超出减掉*!/*/
+}
+.cg_clum .left{
+    height: 100%;
+    width: 75px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.cg_clum .clum{
+    /*height: 100%;*/
+}
+.cg_clum .clum li{
+    height: 45px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid  #ccc;
+    line-height: 45px;
+    text-align: center;
+}
+.cg_clum .right{
+    margin-left: 75px;
+    height: 100%;
+    padding: 8px 8px 0 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.cg_clum .right .headerpic{
+    margin-bottom: 8px;
+}
+
+.cg_clum .right .content1{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.cg_clum .right .range{
+    text-align: right;
+}
+
+.cg_clum .right .content1 li{
+    padding: 0 5px;
+    box-sizing: border-box;
+
+}
+.cg_clum .right .pic1 ul{
+    overflow: hidden;/*用clearfix不可以的*/
+    background-color: #fff;
+}
+.cg_clum .right .pic1 p{
+ text-align: center;
+    line-height: 32px;
+}
+.cg_clum .right .txt{
+    line-height: 25px;
+}

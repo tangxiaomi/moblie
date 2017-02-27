@@ -1,0 +1,38 @@
+/*
+* @Author: Administrator
+* @Date:   2016-11-20 15:45:56
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-11-20 15:58:43
+*/
+
+/* 声明iconfont字体 */
+@font-face {
+	font-family: 'itcast';
+	src:
+		url(../font/MiFie-Web-Font.eot) format('embedded-opentype'),
+		url(../font/MiFie-Web-Font.svg) format('svg'),
+		url(../font/MiFie-Web-Font.ttf) format('truetype'),
+		url(../font/MiFie-Web-Font.woff) format('woff')
+}
+.wjs_icons{
+	font-family: 'itcast';
+	font-size: 16px;
+}
+.phone_icons::before{
+	content: "\e908";
+}
+.tel_icons::before{
+	content: "\e909";
+}
+
+body{
+	font: 12px/1.5 '微软雅黑';
+}
+a{
+	font-size: 12px;
+	color: #333;
+	font-family: '微软雅黑';
+}
+a:hover{
+	color: #333;
+}

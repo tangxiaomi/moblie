@@ -1,0 +1,229 @@
+.wjs_header{
+    height: 40px;
+    line-height: 37px;  /*行高太高会让下边哪行不能顶头*/
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+.wjs_header>.container>.row div{
+border-right: 1px solid #ccc;
+    position: relative;
+
+}
+.wjs_header>.container>.row div:last-child{
+    border-right: none;
+}
+.wjs_header>.container .register{
+    background-color: red;
+    padding: 4px 8px;
+    color: #fff;
+    margin: 0 5px 5px 0;
+}
+.wjs_header>.container>.row .erweima{
+    position: absolute;
+    z-index: 99;
+    top: 40px;
+    left: 50%;
+    margin-left: -60px;
+    display: none;
+}
+.wjs_header>.container>.row div:first-child:hover img{
+      display: block;
+}
+/*导航区域*/
+.wjs_nav{
+    width: 100%;
+    z-index: 999;
+    left: 0;
+    top: 0;
+}
+.wjs_nav .nav_height{
+    height: 82px;
+    background-color: #fff;
+
+}
+.wjs_nav .navbar-header .navbar-brand{
+    height: 80px;
+    line-height: 50px;  /*因为他有padding值*/
+}
+.wjs_nav .nav>li>a{
+    height: 80px;
+    line-height: 50px;
+}
+
+.wjs_nav .nav>li.active{
+    border-bottom: 2px solid red;
+}
+.wjs_nav .nav>li:hover{
+    border-bottom: 2px solid red;
+}
+.wjs_nav .navbar-default .navbar-nav>.active>a{
+    background-color: #fff;
+
+}
+.wjs_nav .navbar-toggle{
+    margin-top: 24px;
+}
+.wjs_nav .navbar{
+    margin-bottom: 0px;
+}
+/*轮播图区域*/
+.lunbo .carousel-inner .item a{
+    display: block;
+    height: 410px;
+    /*width: 100%;*/
+    background-position: center;
+    background-size: cover;
+}
+/*特色服务区*/
+.wjs_special{
+    padding: 50px 0;
+    background-color: #fff;
+
+}
+.wjs_special .media-heading{
+    font-weight: 600;
+}
+/*立即预定*/
+.wjs_book{
+    height: 60px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    line-height: 60px;
+    background-color:#fff;
+}
+/*领券 */
+.wjs_couple{
+    padding: 50px 0;
+    background-color: #f0f0f0;
+}
+.wjs_couple .nav-tabs > li > a{
+    font-size: 16px;
+}
+.wjs_couple .nav-tabs>li.active>a{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid red;
+}
+.wjs_couple .product{
+    height: 160px;
+    margin-top: 20px;
+    position: relative;
+    background-color: #fff;
+}
+.wjs_couple .product .product_r{
+    float: right;
+    height: 160px;
+    width: 120px;
+    position: relative;
+    text-align: center;
+    padding-top: 60px;
+    border-left: 1px dashed #ccc;
+}
+.wjs_couple .product .product_r span{
+    font-size: 30px;
+    font-weight: 700;
+}
+.wjs_couple .product .product_r p{
+    font-size: 16px;
+}
+.wjs_couple .product .product_l{
+    margin-right: 120px;
+    height: 160px;
+    white-space: nowrap;
+
+
+}
+.wjs_couple .product .product_r{
+    position: relative;
+
+}
+
+.wjs_couple .product .product_r .txt{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 100%;
+    text-align: center;
+
+}
+.wjs_couple .product .product_r .txt .btn{
+    padding: 2px 4px;
+}
+
+.wjs_couple .product .product_l h4{
+    /*padding:???*/
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.wjs_couple .product .product_l p{
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.wjs_couple .special{
+    background-color: red;
+    color: #fff;
+}
+.wjs_couple .product_r::before,.wjs_couple .product_r::after{
+    content:'';
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: #f0f0f0;
+}
+.wjs_couple .product_r::after{
+    top:150px;
+    /*bottom: -10px;*/
+}
+/*全球新闻*/
+.wjs_globa{
+    padding-top: 50px;
+}
+.wjs_globa .row p{
+    border-bottom: 1px dashed #ccc;
+    text-align: center;
+    padding-bottom: 10px;
+    position: relative;
+}
+.my_dot::after{
+    width: 10px;
+    height: 10px;
+    content:'';
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 23px;
+    background-color: #fff;
+
+}
+.wjs_globa .nav-pills > li{
+    margin-bottom: 30px;
+}
+.wjs_globa .nav-pills > li > a{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    line-height: 50px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wjs_globa .nav-pills > li > a:hover{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    line-height: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+@media (max-width:720px) {
+    .wjs_globa .nav-pills > li{
+        float: left;
+        width: 25%;
+    }
+}

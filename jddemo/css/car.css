@@ -1,0 +1,215 @@
+.my_logo::before{
+    width: 15px;
+    height: 10px;
+    left: 40px;
+    -webkit-background-size: 120px;
+    background-size: 120px;
+}
+
+/*头部*/
+.cg_header .center h4{
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+.jd_safe{
+    height: 32px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.jd_safe p{
+    line-height: 32px;
+    text-align: center;
+    position: relative;
+
+}
+.jd_safe p::before{
+    width: 18px;
+    height: 18px;
+    content:'';
+    position: absolute;
+    background: url(../images/icons/safe_icon.png);
+    background-size: 18px;/*???????*/
+    top: 50%;
+    transform: translateY(-50%);
+    left: 107px;/*???????*/
+}
+
+/*京东自营*/
+.jd_sale{
+    margin-top: 10px;
+    background-color: #fff;
+}
+.jd_sale .jd_sale_h{
+    height: 32px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    line-height: 32px;
+    position: relative;
+}
+
+.jd_sale .jd_sale_h .h_right{
+    color: red;
+    padding-right: 8px;
+}
+.jd_sale .jd_sale_h .h_left{
+    padding-left: 55px;
+
+}
+
+.jd_sale_b{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.main_content{
+  position: relative;
+    height: 100px;
+}
+.jd_sale_b .leftpic{
+    width: 80px;
+    height: 80px;
+}
+.jd_sale_b .rel_content{
+   margin-top: 10px;
+
+}
+.jd_sale_b .left_round{
+    width: 40px;
+    height: 32px;
+    position: relative;
+}
+.jd_sale_b .right_txt{
+    margin-left: 132px;/*??*/
+}
+.line{
+    -webkit-line-clamp: 2
+}
+.jd_sale_b .right_txt .bottom_txt{
+    margin-top: 10px;
+}
+.jd_sale_b .right_txt .bottom_txt .left_txt{
+    width: 112px;
+    height: 26px;
+    font-size: 0;
+    line-height: 26px;
+    text-align: center;
+    border: 1px solid #ccc;
+    line-height: 26px;
+
+}
+.jd_sale_b .right_txt .bottom_txt span{
+    height: 100%;
+    /*background-color: red;*/
+    display: inline-block;
+    font-size: 12px;
+
+}
+.jd_sale_b .right_txt .bottom_txt span:nth-child(2) input{
+    height: 100%;
+    width: 100%;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    text-align: center;
+}
+.jd_sale_b .rubblish{
+    padding-right: 10px;
+}
+.jd_sale_b .rubblish .top_r{
+    width: 20px;
+    height: 5px;
+    display: block;
+    background-image: url(../images/icons/delete_up.png);
+    background-size: 20px 5px;
+    margin-left: -1px;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+}
+.jd_sale_b .rubblish .bottom_r{
+    width: 18px;
+    height: 18px;
+    display: block;
+    background-image: url(../images/icons/delete_down.png);
+    background-size: 18px 18px;
+    margin-top: -2px;
+}
+
+/*遮罩层*/
+.mask .big_mask{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 99999;
+}
+.mask .big_mask .box{
+    width: 80%;
+    height: 160px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.mask .big_mask .box p{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+.mask .big_mask .box button{
+    margin-top: 10px;
+    width: 45%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.mask .big_mask .box .show{
+    color: #fff;
+    background-color: red;
+}
+
+
+@-webkit-keyframes my_bounceInDown {
+    from, 60%, 75%, 90%, to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-50%, -3000px, 0);
+        transform: translate3d(-50%, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(-50%, 25px, 0);
+        transform: translate3d(-50%, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-50%, -60%, 0);
+        transform: translate3d(-50%, -60%, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(-50%, -45%, 0);
+        transform: translate3d(-50%, -45%, 0);
+    }
+
+    to {
+        -webkit-transform: translate3d(-50%, -50%, 0);
+        transform: translate3d(-50%, -50%, 0);
+    }
+}
+
+.my_bounceInDown {  /*这个类和那个动画是不分开的*/
+    -webkit-animation-name: my_bounceInDown;
+    animation-name: my_bounceInDown;
+}
